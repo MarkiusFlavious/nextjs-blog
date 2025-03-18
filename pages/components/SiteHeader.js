@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function SiteHeader({ className }) {
     return (
         <header className={ `${className} bg-slate-950 bg-opacity-60 shadow-md shadow-slate-900/60`}>
-            <div className="container mx-auto lg:max-w-7xl flex items-center justify-between py-1">
+            <div className="container mx-auto lg:max-w-7xl flex items-center justify-between py-1 px-[20px]">
                 <div className="logo-area">
                     <Link href="/" className="flex justify-center">
                         <Image src="/SampleLogo.avif" alt="Logo" width="100" height="100" priority="true" />

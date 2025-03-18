@@ -6,7 +6,7 @@ export default function Home() {
     return (
         <>
             <Head>
-                <title key="pagetitle">Welcome To Blog</title>
+                <title key="pagetitle">Welcome To My Blog</title>
                 <meta name="description" content="A blog about random travels and random things" key="metadescription" />
             </Head>
             <div className="min-h-screen bg-[url('/home-background.avif')] relative">
