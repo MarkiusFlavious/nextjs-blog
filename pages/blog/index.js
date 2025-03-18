@@ -2,7 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 import SiteHeader from "../components/SiteHeader";
 import SiteFooter from "../components/SiteFooter";
-import { getAllPosts } from "../lib/posts";
+import { getAllPosts } from "../../lib/posts";
 import FeaturedImage from "../components/FeaturedImage";
 import Date from "../components/Date";
 
@@ -55,8 +55,8 @@ export default function BlogHome({ allPosts }) {
                                             Posted Under: {
                                                 post.categories.nodes.map
                                                 ((category, index) => (
-                                                    <span className="text-blue-500 hover:text-blue-800">
-                                                        <Link href={`category/${category.slug}`} key={category.slug}>
+                                                    <span key={category.slug} className="text-blue-500 hover:text-blue-800">
+                                                        <Link href={`category/${category.slug}`} >
                                                             {category.name}
                                                         </Link>
                                                         {index < post.categories.nodes.length - 1 && ", "}
