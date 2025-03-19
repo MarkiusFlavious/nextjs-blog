@@ -1,10 +1,23 @@
+import Link from "next/link";
+
 export default function SiteFooter() {
     return (
         <>
-        <footer id="site-footer" className="flex justify-center bg-slate-200">
-            <div className="py-3">
-                &copy; 2025 Mark Test
-            </div>            
+        <footer id="site-footer" className="bg-slate-200">
+            <div className="flex justify-center items-center container mx-auto lg:max-w-6xl py-4">
+                
+                <div className=" border-r border-black pr-4">&copy; 2025 Mark Test</div>
+                <ul className="flex [&>li]:px-2 pl-2">
+                    <li>
+                        <Link href="/about">About</Link>
+                    </li>
+                    <li>
+                        <Link href="/privacy-policy">Privacy Policy</Link>
+                    </li>
+                </ul>
+
+            </div>
+                        
         </footer>
         </>
     );

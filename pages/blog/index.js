@@ -22,6 +22,7 @@ export default function BlogHome({ allPosts }) {
         <>
             <Head>
                 <title>Blog</title>
+                <meta name="robots" content="noindex" />
             </Head>
             <div className="h-[55vh] min-h-[20rem] bg-[url('/home-background.avif')] relative">
                 <div className="absolute bg-gradient-to-b from-slate-900 via-slate-800 via-70% to-slate-700 to-120% inset-0 z-0 opacity-50"></div>

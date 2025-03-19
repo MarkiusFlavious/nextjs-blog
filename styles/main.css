@@ -1,3 +1,50 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+    .post-content p {
+        @apply pb-4 text-lg text-slate-950;
+    }
+
+    .post-content a {
+        @apply underline text-blue-600 hover:text-blue-800;
+    }
+
+    .post-content > ul, .post-content > ol {
+        @apply pb-4 pl-4 text-lg text-slate-900;
+    }
+
+    .post-content > ul  {
+        @apply list-disc list-inside [&_ul]:list-[revert] [&_ul]:list-inside [&_ul]:pl-4;
+    }
+
+    .post-content > ol {
+        @apply list-decimal list-inside [&_ol]:list-[revert] [&_ol]:list-inside [&_ol]:pl-4;
+    }
+
+    .post-content figure {
+        @apply pb-4 flex flex-col items-center;
+    }
+
+    .post-content figure figcaption {
+        @apply text-center pt-2;
+    }
+
+    .post-content h2, h3, h4 {
+        @apply pt-[0.2em] pb-[0.5em];
+    }
+
+    .post-content h2 {
+        @apply text-4xl font-bold;
+    }
+    
+    .post-content h3 {
+        @apply text-2xl font-bold;
+    }
+
+    .post-content h4 {
+        @apply text-xl font-medium;
+    }
+
+}

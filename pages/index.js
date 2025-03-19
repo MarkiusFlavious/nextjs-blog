@@ -8,6 +8,7 @@ export default function Home() {
             <Head>
                 <title key="pagetitle">Welcome To My Blog</title>
                 <meta name="description" content="A blog about random travels and random things" key="metadescription" />
+                <meta name="robots" content="noindex" />
             </Head>
             <div className="min-h-screen bg-[url('/home-background.avif')] relative">
                 <div className="absolute bg-gradient-to-b from-slate-900 via-slate-800 via-70% to-slate-600 to-120% inset-0 z-0 opacity-60"></div>
