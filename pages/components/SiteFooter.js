@@ -7,8 +7,8 @@ export default function SiteFooter() {
             <div className="flex justify-center items-center container mx-auto lg:max-w-6xl py-4">
                 
                 <div className=" border-r border-black pr-4">&copy; 2025 Mark Test</div>
-                <ul className="flex [&>li]:px-2 pl-2">
-                    <li>
+                <ul className="flex [&>li]:px-2 [&>li:hover]:opacity-75 [&>li]:text-black pl-2">
+                    <li className="">
                         <Link href="/about">About</Link>
                     </li>
                     <li>
